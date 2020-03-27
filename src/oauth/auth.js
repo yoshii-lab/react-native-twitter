@@ -1,9 +1,16 @@
 import {Linking} from 'react-native';
 
-import URLSearchParams from 'url-search-params';
+//import URLSearchParams from 'url-search-params';
+import { URL, URLSearchParams } from 'whatwg-url';
+import { Buffer } from 'buffer';
 
 import request from './request';
 import {query} from '../util';
+
+global.Buffer = Buffer;
+global.URL = URL;
+global.URLSearchParams = URLSearchParams;
+
 
 function getRequestToken(tokens, callbackUrl, accessType) {
   const method = 'POST';
