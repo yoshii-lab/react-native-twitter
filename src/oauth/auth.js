@@ -68,6 +68,7 @@ Linking.addEventListener('url', ({url}) => {
 export default async function auth(
   tokens,
   callbackUrl,
+  webViewCallback,
   {accessType, forSignIn = false, forceLogin = false, screenName = ''} = {},
 ) {
   const usePin = typeof callbackUrl.then === 'function';
@@ -76,9 +77,13 @@ export default async function auth(
     usePin ? 'oob' : callbackUrl,
     accessType,
   );
-  Linking.openURL(`https://api.twitter.com/oauth/${forSignIn ? 'authenticate' : 'authorize'}?${
+  
+  var url = `https://api.twitter.com/oauth/${forSignIn ? 'authenticate' : 'authorize'}?${
     query({oauth_token: requestToken, force_login: forceLogin, screen_name: screenName})
-  }`);
+  }`;
+
+  webViewCallback(url);
+  
   return getAccessToken(
     {...tokens, requestToken, requestTokenSecret},
     await (
