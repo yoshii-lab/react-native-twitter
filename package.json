@@ -28,7 +28,8 @@
   "dependencies": {
     "eventemitter3": "^2.0.3",
     "jssha": "^2.3.1",
-    "url-search-params": "^0.10.0"
+    "whatwg-url": "^8.0.0",
+    "buffer": "^5.5.0"
   },
   "devDependencies": {
     "ava": "^0.22.0",
@@ -46,7 +47,7 @@
     "android/src",
     "src"
   ],
-  "homepage": "https://github.com/Piroro-hs/react-native-twitter#readme",
+  "homepage": "https://github.com/yoshii-lab/react-native-twitter#readme",
   "keywords": [
     "api",
     "oauth",
@@ -60,7 +61,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+ssh://git@github.com/Piroro-hs/react-native-twitter.git"
+    "url": "git+ssh://git@github.com/yoshii-lab/react-native-twitter.git"
   },
   "scripts": {
     "test": "ava"
