@@ -2,7 +2,7 @@
   "name": "react-native-twitter",
   "description": "react-native-twitter",
   "version": "0.2.1",
-  "author": "Piroro-hs",
+  "author": "yoshii-lab",
   "ava": {
     "babel": {
       "babelrc": true,
@@ -23,7 +23,7 @@
     ]
   },
   "bugs": {
-    "url": "https://github.com/Piroro-hs/react-native-twitter/issues"
+    "url": "https://github.com/yoshii-lab/react-native-twitter/issues"
   },
   "dependencies": {
     "eventemitter3": "^2.0.3",
