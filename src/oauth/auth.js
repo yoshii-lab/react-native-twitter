@@ -1,6 +1,5 @@
 import {Linking} from 'react-native';
 
-//import URLSearchParams from 'url-search-params';
 import { URL, URLSearchParams } from 'whatwg-url';
 import { Buffer } from 'buffer';
 
